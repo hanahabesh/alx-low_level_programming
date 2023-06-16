@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 	while (lower_alphabet <= 'z')
 	{
 		putchar(lower_alphabet);
-	
+
 		lower_alphabet++;
 	}
 
