@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * main - Entry point
-* 
+*
 * Return: Always 0 (Success)
 */
 int main(void)
@@ -15,15 +15,15 @@ int main(void)
 		{
 			for (k = j + 1; k <= '9'; k++)
 			{
-				if (i != j && j != k && i != k && i < j && j <
- k && i < k)
+				if (i != j && j != k && i != k && i < j && j < 
+k && i < k)
 				{
 					putchar(i);
 					putchar(j);
 					putchar(k);
 					{
-						if (i == '7' && j == '8' && k
- == '9')
+						if (i == '7' && j == '8' && k 
+== '9')
 						{
 							putchar('\n');
 						}
