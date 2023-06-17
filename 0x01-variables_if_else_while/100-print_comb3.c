@@ -13,20 +13,22 @@ int main(void)
 	{
 		for (j = '0' + 1; j <= '9'; j++)
 		{
-			if (i != j)
+			if (!(i == j) && i < j)
 			{
 				putchar(i);
 				putchar(j);
 				if (i == '8' && j == '9')
 				{
-					continue;
+					putchar('\n');
 				}
+				else
+				{
 					putchar(',');
 					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
 }
 
