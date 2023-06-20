@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, m5, m3, sum = 0;
 
-	for (; i < 1024; i++)
+	for (i = 0; i < 1024; i++)
 	{
 		m5 = i % 5;
 		m3 = i % 3;
