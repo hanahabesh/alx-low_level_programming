@@ -7,17 +7,17 @@
 */
 int main(void)
 {
-	int i, m5, m3, sum;
+	int i, m5, m3, sum = 0;
 
-	for (sum = 0; i < 1024; i++)
+	for (; i < 1024; i++)
 	{
 		m5 = i % 5;
 		m3 = i % 3;
 		if (m3 == 0 || m5 == 0)
 		{
-			sum = sum + i;
+			sum += i;
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
