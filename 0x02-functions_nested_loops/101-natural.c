@@ -16,8 +16,8 @@ int main(void)
 		if (m3 == 0 || m5 == 0)
 		{
 			sum = sum + i;
-			printf("%d ", sum);
 		}
 	}
+	printf("%d", sum);
 	return (0);
 }
