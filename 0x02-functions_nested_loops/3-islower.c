@@ -2,6 +2,7 @@
 
 /**
 * _islower - check the code
+* @c : the character to print
 *
 * Return: 1 and 0.
 */
