@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *
  * main - Fizz Buzz
+ *
  * Return: no return value
  */
 int main(void)
