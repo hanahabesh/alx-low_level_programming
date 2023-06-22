@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_triangle - print triangl using hashtagg
+ * print_triangle - print triangl using hashtagg
  * @size: ghs
  * Return: 0
  */
