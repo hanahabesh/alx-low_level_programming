@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-   * leet - replace the specific words with numbers
+   * rot13 - replace the specific words with numbers
     * @a: result of the replaced string
      * Return: return the result
       */
@@ -9,6 +9,7 @@ char *rot13(char *a)
 	int i, j;
 	char str1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdfghijklmnopqrstuvwxyz";
 	char str2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdfghijklm";
+
 	for (i = 0; a[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
@@ -18,4 +19,4 @@ char *rot13(char *a)
 		}
 	}
 	return (a);
-}                     
+}
