@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main - magic code
+ *
+ * Return: void
+ */
 int main(void)
 {
 	int n;
@@ -7,7 +11,7 @@ int main(void)
 	int *p;
 
 	a[2] = 1024;
-	p = &n;	
+	p = &n;
 	/*
 	 * write your line of code here...
 	 * Remember:
