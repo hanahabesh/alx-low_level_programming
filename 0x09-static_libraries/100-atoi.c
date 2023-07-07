@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * atoi - change the char to ASCII num
+ * _atoi - change the char to ASCII num
  * @s: the string
  * Return: the value
  */
@@ -16,7 +16,7 @@ int _atoi(char *s)
 		sign = -1;
 		i++;
 	}
-	for (;s[i] != '\0'; ++i)
-		res = res*10 + s[i] - '\0';
-	return sign * res;
+	for (; s[i] != '\0'; ++i)
+		res = res * 10 + s[i] - '\0';
+	return (sign * res);
 }
