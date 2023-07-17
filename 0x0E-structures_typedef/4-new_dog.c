@@ -2,14 +2,14 @@
 #include "dog.h"
 /**
  * strleng - find the length of string
- * @l: string length
+ * @s: string length
  *
  * Return: return the length
  */
 int strleng(char *s)
 {
 	int i = 0;
-	
+
 	while (*s++)
 	{
 		i++;
@@ -22,11 +22,11 @@ int strleng(char *s)
  * @s2: the copied spot
  * Return: return the copy string
  */
-char *cpystr(char *s1, char *s2)
+char *cpystr(char *s2, char *s1)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i]; i++)
 		s2[i] = s1[i];
 	s2[i] = '\0';
 	return (s2);
