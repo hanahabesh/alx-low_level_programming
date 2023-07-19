@@ -9,8 +9,8 @@
 int main(int argc, char *argv[])
 {
 	int i, byt;
-	unsigned char opcode;
 	int (*p)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		opcode = *(unsigned char *)p;
 		printf("%.2x", opcode);
-		if (i == (byt - 1))
+		if (i == byt - 1)
 			continue;
 		printf(" ");
 		p++;
