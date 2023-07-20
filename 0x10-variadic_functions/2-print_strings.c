@@ -19,7 +19,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		S = va_arg(list, char *);
 		if (S == NULL)
 			printf("(nil)");
-		printf("%s", S);
+		else
+			printf("%s", S);
 		if (separator != NULL && i != (n - 1))
 			printf("%s", separator);
 	}
