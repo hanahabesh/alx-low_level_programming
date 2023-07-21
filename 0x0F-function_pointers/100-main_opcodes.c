@@ -8,31 +8,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, byt;
-	int (*p)(int, char **) = main;
-	unsigned char opcode;
+	int byte, i;
+	int (*a)(int, char **) = main;
+	unsigned char op;
 
 	if (argc != 2)
 	{
-		printf("Erro\n");
+		printf("Error\n");
 		exit(1);
 	}
-	byt = atoi(argv[1]);
-	if (byt < 0)
+	byte = atoi(argv[1]);
+	if (byte < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < byt; i++)
+	for (i = 0; i < byte; i++)
 	{
-		opcode = *(unsigned char *)p;
-		printf("%.2x", opcode);
-		if (i == byt - 1)
+		op = *(unsigned char *)a;
+		printf("%.2x", op);
+		if (i == byte - 1)
 			continue;
 		printf(" ");
-		p++;
+		a++;
 	}
 	printf("\n");
 	return (0);
 }
-
