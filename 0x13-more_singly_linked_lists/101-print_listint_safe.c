@@ -3,6 +3,8 @@
 #include "lists.h"
 
 size_t _listint_length(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
+
 /**
  * print_listint_safe - print list with a memory address
  * @head: pointer to the first node
@@ -10,9 +12,8 @@ size_t _listint_length(const listint_t *head);
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t point, i;
+	size_t point, i = 0;
 
-	i = 0;
 	point = _listint_length(head);
 	if (point == 0)
 	{
