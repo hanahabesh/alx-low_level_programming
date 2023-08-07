@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	new = new_buf(argv[2]);
-	i = open(arg[1], O_RDONLY);
+	i = open(argv[1], O_RDONLY);
 	x = read(i, new, 1024);
 	one = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	do {
